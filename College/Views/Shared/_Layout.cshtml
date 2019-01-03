@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <style>
+
+        .mynav_navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+            .mynav_navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+
+        .mynav_dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+
+
+            .mynav_dropdown .mynav_dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+
+
+            .mynav_navbar a:hover, .mynav_dropdown:hover .mynav_dropbtn {
+                background-color: red;
+            }
+
+
+
+        .mynav_dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+
+
+            .mynav_dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+
+
+                .mynav_dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+
+
+        .mynav_dropdown:hover .mynav_dropdown-content {
+            display: block;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    
+
+    
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+
+
+
+                <!--
+
+    <div class="navbar-header ">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TSN</a>
+
+    </div>
+
+    <div class="mynav_navbar ">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+
+        <div class="mynav_dropdown">
+            <button class="mynav_dropbtn">
+
+                Student
+
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+
+            <div class="mynav_dropdown-content">
+
+                <a class="dropdown-item" href="#">Information</a>
+                <a class="dropdown-item" href="#">Book Event</a>
+                <a class="dropdown-item" href="#">Google Maps</a>
+                <a class="dropdown-item" asp-controller="Reports" asp-action="Index">College Report</a>
+            </div>
+        </div>
+
+        <div class="mynav_dropdown">
+            <button class="mynav_dropbtn">
+
+                Staff
+
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+
+            <div class="mynav_dropdown-content">
+
+                <a class="dropdown-item" href="#">Student Information</a>
+                <a class="dropdown-item" href="#">College Event List</a>
+                <a class="dropdown-item" href="#">Student Application</a>
+                <a class="dropdown-item" asp-controller="Report" asp-action="Index">View Report</a>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+
+
+
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("TSN Residential Management System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+
+
+                <ul class="nav navbar-nav" style="font-weight:bold;">
+
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Information", "Index", "Report")</li>
+                            <li>@Html.ActionLink("book Event", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Facilities", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Report", "Index", "Report")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Item 1", "Index", "PTDatas")</li>
+                            <li>@Html.ActionLink("Item 2", "FindPTData", "PTDatas")</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+
+
+            </div>
+        </div>
+
+    
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
