@@ -11,6 +11,6 @@ namespace College.Models
         public DateTime EnrolDate { get; set; }
         public string EventPlace { get; set; }
         public string EventDescription { get; set; }
-
+        
     }
 }
