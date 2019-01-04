@@ -208,10 +208,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\College.mdf" />
-    <Content Include="App_Data\College_log.ldf">
-      <DependentUpon>College.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
