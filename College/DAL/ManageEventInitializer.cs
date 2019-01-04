@@ -7,9 +7,9 @@ using College.Models;
 
 namespace College.DAL
 {
-    public class EventInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<EventContext>
+    public class ManageEventInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<ManageEventContext>
     {
-        protected override void Seed(EventContext context)
+        protected override void Seed(ManageEventContext context)
         {
             var events = new List<Event>
             {

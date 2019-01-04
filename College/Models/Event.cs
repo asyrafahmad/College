@@ -8,7 +8,7 @@ namespace College.Models
     {
         public int EventID { get; set; }
         public string EventName { get; set; }
-        public DateTime EnrolDate { get; set; }
+        public DateTime EventDate { get; set; }
         public string EventPlace { get; set; }
         public string EventDescription { get; set; }
         

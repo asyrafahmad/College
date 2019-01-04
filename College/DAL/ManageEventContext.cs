@@ -4,16 +4,16 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace College.DAL
 {
-    public class EventContext : DbContext
+    public class ManageEventContext : DbContext
     {
-        public EventContext() : base("EventContext ")
+        public ManageEventContext() : base("ManageEventContext ")
         {
         }
         public DbSet<Event> Events { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           protected override void OnModelCreating(DbModelBuilder modelBuilder)
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 }
