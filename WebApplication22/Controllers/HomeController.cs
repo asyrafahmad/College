@@ -4,9 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace dotnetregister.Controllers
+namespace WebApplication22.Controllers
 {
-    [RequireHttps]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -24,6 +23,13 @@ namespace dotnetregister.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Calendar()
+        {
+            ViewBag.Message = "Calendar page.";
 
             return View();
         }

@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using dotnetregister.Models;
+using WebApplication22.Models;
 
-namespace dotnetregister
+namespace WebApplication22
 {
     public partial class Startup
     {
@@ -58,11 +58,11 @@ namespace dotnetregister
             //   appId: "",
             //   appSecret: "");
 
-            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            {
-                ClientId = "885891925104-kvkjrresgi5i5vnu850hn16domiep852.apps.googleusercontent.com",
-                ClientSecret = "o-nGxu5eDWEZ0lB9IVkBXnmL"
-            });
+            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            //{
+            //    ClientId = "",
+            //    ClientSecret = ""
+            //});
         }
     }
 }
