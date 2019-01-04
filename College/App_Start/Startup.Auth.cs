@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using College.Models;
+using dotnetregister.Models;
 
-namespace College
+namespace dotnetregister
 {
     public partial class Startup
     {
