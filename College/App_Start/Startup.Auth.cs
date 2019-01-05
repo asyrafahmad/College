@@ -58,11 +58,11 @@ namespace College
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "885891925104-kvkjrresgi5i5vnu850hn16domiep852.apps.googleusercontent.com",
+                ClientSecret = "o-nGxu5eDWEZ0lB9IVkBXnmL"
+            });
         }
     }
 }
