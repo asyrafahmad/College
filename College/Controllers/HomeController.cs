@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace College.Controllers
+namespace dotnetregister.Controllers
 {
     [RequireHttps]
     public class HomeController : Controller
