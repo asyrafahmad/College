@@ -285,6 +285,7 @@
     <Content Include="Views\Event\Details.cshtml" />
     <Content Include="Views\Event\Edit.cshtml" />
     <Content Include="Views\Event\Index.cshtml" />
+    <Content Include="Views\Event\Calender.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
