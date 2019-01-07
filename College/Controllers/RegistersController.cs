@@ -123,5 +123,38 @@ namespace College.Controllers
             }
             base.Dispose(disposing);
         }
+
+
+
+        // GET: Registers/Edit/5
+        public ActionResult EditStudentView(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Register register = db.Registers.Find(id);
+            if (register == null)
+            {
+                return HttpNotFound();
+            }
+            return View(register);
+        }
+
+        // POST: Registers/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditStudentView([Bind(Include = "Id,Name,MatricNo,IcNo,Faculty,Year,Course,Username,Password,Confirmpassword")] Register register)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(register).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(register);
+        }
     }
 }
