@@ -124,5 +124,10 @@ namespace College.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Calender()
+        {
+            return View();
+        }
     }
 }

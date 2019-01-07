@@ -1,8 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(dotnetregister.Startup))]
-namespace dotnetregister
+
+[assembly: OwinStartupAttribute(typeof(College.Startup))]
+namespace College
 {
     public partial class Startup
     {

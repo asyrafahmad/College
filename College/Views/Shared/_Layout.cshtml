@@ -8,8 +8,6 @@
     @Scripts.Render("~/bundles/modernizr")
 
 
-
-
     <style>
 
         .mynav_navbar {
@@ -94,126 +92,119 @@
 </head>
 <body>
 
+    
 
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-
-
-
-            <!--
-
-            <div class="navbar-header ">
-
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TSN</a>
-
-            </div>
-
-            <div class="mynav_navbar ">
-
-                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-
-
-                <div class="mynav_dropdown">
-                    <button class="mynav_dropbtn">
-
-                        Student
-
-                        <i class="fa fa-caret-down"></i>
-
-                    </button>
-
-                    <div class="mynav_dropdown-content">
-
-                        <a class="dropdown-item" href="#">Information</a>
-                        <a class="dropdown-item" href="#">Book Event</a>
-                        <a class="dropdown-item" href="#">Google Maps</a>
-                        <a class="dropdown-item" asp-controller="Reports" asp-action="Index">College Report</a>
-                    </div>
-                </div>
-
-                <div class="mynav_dropdown">
-                    <button class="mynav_dropbtn">
-
-                        Staff
-
-                        <i class="fa fa-caret-down"></i>
-
-                    </button>
-
-                    <div class="mynav_dropdown-content">
-
-                        <a class="dropdown-item" href="#">Student Information</a>
-                        <a class="dropdown-item" href="#">College Event List</a>
-                        <a class="dropdown-item" href="#">Student Application</a>
-                        <a class="dropdown-item" asp-controller="Report" asp-action="Index">View Report</a>
-                    </div>
-                </div>
-
-            </div>
-            -->
+    
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
 
 
 
+                <!--
 
+    <div class="navbar-header ">
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("TSN Residential Management System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TSN</a>
 
-
-            <ul class="nav navbar-nav" style="font-weight:bold;">
-
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Information", "Index", "Report")</li>
-                        <li>@Html.ActionLink("Book Event", "Index", "Event")</li>
-                        <li>@Html.ActionLink("Facilities", "Index", "Report")</li>
-                        <li>@Html.ActionLink("Report", "Index", "Report")</li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>@Html.ActionLink("Item 1", "Index", "PTDatas")</li>
-                        <li>@Html.ActionLink("Student Application", "Index", "Registers")</li>
-                        <li>@Html.ActionLink("Events", "Index", "Event")</li>
-
-
-
-                    </ul>
-
-                </li>
-                <li>@Html.ActionLink("About Us", "AboutUs", "AboutUs")</li>
-            </ul>
-
-            @Html.Partial("_LoginPartial")
-
-
-        </div>
     </div>
 
+    <div class="mynav_navbar ">
+
+        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+
+        <div class="mynav_dropdown">
+            <button class="mynav_dropbtn">
+
+                Student
+
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+
+            <div class="mynav_dropdown-content">
+
+                <a class="dropdown-item" href="#">Information</a>
+                <a class="dropdown-item" href="#">Book Event</a>
+                <a class="dropdown-item" href="#">Google Maps</a>
+                <a class="dropdown-item" asp-controller="Reports" asp-action="Index">College Report</a>
+            </div>
+        </div>
+
+        <div class="mynav_dropdown">
+            <button class="mynav_dropbtn">
+
+                Staff
+
+                <i class="fa fa-caret-down"></i>
+
+            </button>
+
+            <div class="mynav_dropdown-content">
+
+                <a class="dropdown-item" href="#">Student Information</a>
+                <a class="dropdown-item" href="#">College Event List</a>
+                <a class="dropdown-item" href="#">Student Application</a>
+                <a class="dropdown-item" asp-controller="Report" asp-action="Index">View Report</a>
+            </div>
+        </div>
+
+    </div>
+    -->
 
 
 
 
 
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("TSN Residential Management System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
 
+
+                <ul class="nav navbar-nav" style="font-weight:bold;">
+
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Information", "Index", "Report")</li>
+                            <li>@Html.ActionLink("book Event", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Facilities", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Report", "Index", "Report")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Item 1", "Index", "PTDatas")</li>
+                            <li>@Html.ActionLink("Item 2", "FindPTData", "PTDatas")</li>
+                            <li>@Html.ActionLink("Events", "Index", "Event")</li>
+                            <li>@Html.ActionLink("Calender", "Calender", "Event")</li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+
+
+            </div>
+        </div>
+
+    
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Aplication</p>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
