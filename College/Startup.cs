@@ -1,6 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
+
 [assembly: OwinStartupAttribute(typeof(College.Startup))]
 namespace College
 {
