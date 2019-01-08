@@ -7,6 +7,13 @@
       <Diagram DiagramId="2c71ef15f8154bbc947a535d12ae2980" Name="Diagram1">
         <EntityTypeShape EntityType="RegisterModel.Register" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
-    </edmx:Diagrams>
+
+      <Diagram DiagramId="ab1a752c9a0d4034bfb59936c5a93c41" Name="Diagram1">
+        <EntityTypeShape EntityType="EventModel.Table" Width="1.375" PointX="2.5" PointY="1" IsExpanded="true" />
+
+      </Diagram>
+
+
+      </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>
