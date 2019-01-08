@@ -13,7 +13,7 @@ namespace College.Controllers
 {
     public class EventController : Controller
     {
-        private ManageEventContext db = new ManageEventContext();
+        private Event db = new Event();
 
         // GET: Event
         public ActionResult Index()
